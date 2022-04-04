@@ -28,6 +28,6 @@ COPY --from=builder /usr/src/libducohash/libducohasher.so .
 # Confirm it works:
 RUN wget https://server.duinocoin.com/fasthash/PC_Miner.py
 
-COPY ["Settings.cfg", "./Duino-Coin PC Miner 3.0/Settings.cfg"]
+#COPY ["Settings.cfg", "./Duino-Coin PC Miner 3.1/Settings.cfg"]
 
-CMD python3 PC_Miner.py
+#CMD python3 PC_Miner.py

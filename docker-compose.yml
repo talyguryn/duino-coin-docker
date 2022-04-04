@@ -3,3 +3,6 @@ services:
   app:
     build: .
     restart: unless-stopped
+    command: python3 PC_Miner.py
+    volumes:
+      - ./Settings.cfg:/usr/src/app/Duino-Coin PC Miner 3.1/Settings.cfg
